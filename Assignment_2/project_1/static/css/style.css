@@ -1,0 +1,20 @@
+body {
+  background-color: #f1faee;
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+
+}
+
+.form-control::placeholder {
+  color: gray;
+  opacity: 1;
+  font-size: 12px;
+}
+
+
+
+
+
+
+

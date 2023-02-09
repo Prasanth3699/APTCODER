@@ -1,0 +1,27 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}
+<title>Edit Employee</title>
+{% endblock title %}
+
+{% block content %}
+<div class="container ">
+    <div class="row d-flex justify-content-center my-3">
+        <div class="col-6">
+            <div class="card shadow-lg px-3">
+                <div class="text-center my-3">
+                    <h3>Edit Your Details</h3>
+                </div>
+                <form action="" method="post">
+                    {% csrf_token %}
+                    {{form.as_p}}
+                    <div class="text-center my-2">
+                        <button type="submit" class="btn btn-success px-3">save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
